@@ -84,10 +84,10 @@
           <!-- Sidebar Menu -->
           <!-- Sidebar -->
           <div
-            class="d-flex flex-column align-items-center bg-light shadow-lg side-menu fs-4 gap-4 pt-5 position-fixed h-100 overflow-hidden"
+            class="d-flex flex-column align-items-center bg-light shadow-lg side-menu fs-4 gap-2 pt-5 position-fixed h-100 overflow-hidden"
             style="width: 60px; transition: width 0.3s ease-in-out"
             onmouseover="this.style.width='180px'"
-            onmouseout="this.style.width='60px'"
+            onmouseout="this.style.width='70px'"
           >
             <div class="d-flex align-items-center gap-2 w-100 px-3">
               <i class="fa-solid fa-house"></i>
@@ -295,11 +295,6 @@
 
                 <!-- Calendar -->
                 <div class="card card-custom">
-                  <img
-                    src="https://source.unsplash.com/300x150/?study,learning"
-                    class="img-fluid rounded"
-                    alt="Study"
-                  />
                   <h5 class="text-center mt-2">February 2025</h5>
                   <table class="table text-center">
                     <thead>
@@ -410,10 +405,93 @@
                     </div>
                   </div>
                 </div>
+                <!-- shop -->
+                <div class="bg-white mt-4 rounded p-3">
+                  <!-- Page Header -->
+                  <div class="bg-white p-4 rounded shadow-sm">
+                    <h2 class="fw-bold">Shop</h2>
+                    <hr />
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <i class="bi bi-grid"></i> Showing all 12 results
+                      </div>
+                      <select class="form-select w-auto">
+                        <option selected>Sort by latest</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Best Rating</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Product Grid -->
+                  <div class="row mt-4">
+                    <!-- Product 1 -->
+                    <div class="col-md-4">
+                      <div class="card border-0 shadow-sm">
+                        <img
+                          src="https://i.etsystatic.com/35237982/r/il/dd784d/5760610515/il_1588xN.5760610515_i4yl.jpg"
+                          class="card-img-top"
+                          alt="How to win friends"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">How to win friends</h5>
+                          <p class="text-warning">★★★★☆</p>
+                          <p class="fw-bold">$65.00 – $85.00</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="col-md-4">
+                      <div class="card border-0 shadow-sm position-relative">
+                        <img
+                          src="https://i.etsystatic.com/57332842/r/il/016d8f/6705084185/il_1588xN.6705084185_p3w2.jpg"
+                          class="card-img-top"
+                          alt="Deep Work"
+                        />
+                        <div
+                          class="position-absolute top-0 end-0 m-2 badge bg-danger"
+                        >
+                          -38%
+                        </div>
+                        <div class="Deep Work">
+                          <h5 class="card-title">Deep Work</h5>
+                          <p class="text-warning">★★★★☆</p>
+                          <p>
+                            <del class="text-muted">$80.00</del>
+                            <span class="fw-bold">$50.00</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="col-md-4">
+                      <div class="card border-0 shadow-sm">
+                        <img
+                          src="https://i.etsystatic.com/47071481/r/il/65a036/5412837563/il_1588xN.5412837563_e6kb.jpg"
+                          class="card-img-top"
+                          alt="Think and Grow Rich"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Think and Grow Rich</h5>
+                          <p class="text-warning">★★★★★</p>
+                          <p class="fw-bold">$55.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <!-- Main Content Ends -->
+           <footer>
+            
+           </footer>
         </div>
       </div>
     </main>
