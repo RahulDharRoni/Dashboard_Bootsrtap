@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar Menu -->
+        <!-- Sidebar -->
+        <div
+          class="col-md-2 vh-100 bg-primary text-white position-fixed d-flex flex-column pt-4 px-3"
+        >
+          <!-- User Profile -->
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="col-md-4">
+              <i
+                class="fa-solid fa-user me-2 fs-1 bg-secondary-subtle rounded-circle p-2"
+              ></i>
+            </div>
+            <div class="dropdown col-md-8 d-flex justify-content-end">
+              <button
+                class="btn btn-secondary dropdown-toggle d-flex align-items-center"
+                type="button"
+                data-bs-toggle="dropdown"
+              >
+                Profile
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Menu -->
+          <div>
+            <a
+              href="#"
+              class="d-flex align-items-center gap-2 text-white text-decoration-none py-2"
+            >
+              <i class="fa-solid fa-house"></i>
+              <span class="ms-2 text-nowrap d-none d-md-inline">Home</span>
+            </a>
+
+            <a
+              href="#"
+              class="d-flex align-items-center gap-2 text-white text-decoration-none py-2"
+            >
+              <i class="fa-solid fa-message"></i>
+              <span class="ms-2 text-nowrap d-none d-md-inline">Messages</span>
+            </a>
+
+            <a
+              href="#"
+              class="d-flex align-items-center gap-2 text-white text-decoration-none py-2"
+            >
+              <i class="fa-solid fa-users"></i>
+              <span class="ms-2 text-nowrap d-none d-md-inline">Users</span>
+            </a>
+
+            <a
+              href="shop.html"
+              class="d-flex align-items-center gap-2 text-white text-decoration-none py-2"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="ms-2 text-nowrap d-none d-md-inline">Cart</span>
+            </a>
+
+            <a
+              href="#"
+              class="d-flex align-items-center gap-2 text-white text-decoration-none py-2"
+            >
+              <i class="fa-solid fa-pen-to-square"></i>
+              <span class="ms-2 text-nowrap d-none d-md-inline">Edit</span>
+            </a>
+          </div>
+
+          <!-- Language, Message & Notifications -->
+          <div
+            class="mt-auto d-flex justify-content-between align-items-center my-2"
+          >
+            <div class="dropdown me-3">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+              >
+                Menu
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Icons -->
+            <div class="me-3">
+              <i class="fa-solid fa-message me-2"></i>
+              <i class="fa-solid fa-bell"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Content (Added Offset to Avoid Overlap) -->
+        <div
+          class="col-md-10 offset-md-2 h-100 d-flex justify-content-end align-content-center"
+        >
+          <div class="row">
+            <!-- shop -->
+            <div class="bg-white rounded p-5 shadow-sm">
+              <!-- Page Header -->
+              <div class="bg-white p-4">
+                <h2 class="fw-bold">Shop</h2>
+                <hr />
+                <div class="d-flex justify-content-between align-items-center">
+                  <div><i class="bi bi-grid"></i> Showing all 12 results</div>
+                  <select class="form-select w-auto">
+                    <option selected>Sort by latest</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Best Rating</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Product Grid -->
+              <div class="row d-flex justify-content-around">
+                <!-- Product 1 -->
+                <div class="col-md-2">
+                  <div class="card border-0 shadow-sm">
+                    <img
+                      src="https://i.etsystatic.com/35237982/r/il/dd784d/5760610515/il_1588xN.5760610515_i4yl.jpg"
+                      class="card-img-top"
+                      alt="How to win friends"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">How to win friends</h5>
+                      <p class="text-warning">★★★★☆</p>
+                      <p class="fw-bold">$65.00 – $85.00</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-md-2">
+                  <div class="card border-0 shadow-sm position-relative">
+                    <img
+                      src="https://i.etsystatic.com/57332842/r/il/016d8f/6705084185/il_1588xN.6705084185_p3w2.jpg"
+                      class="card-img-top"
+                      alt="Deep Work"
+                    />
+                    <div
+                      class="position-absolute top-0 end-0 m-2 badge bg-danger"
+                    >
+                      -38%
+                    </div>
+                    <div class="Deep Work">
+                      <h5 class="card-title">Deep Work</h5>
+                      <p class="text-warning">★★★★☆</p>
+                      <p>
+                        <del class="text-muted">$80.00</del>
+                        <span class="fw-bold">$50.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-md-2">
+                  <div class="card border-0 shadow-sm">
+                    <img
+                      src="https://i.etsystatic.com/47071481/r/il/65a036/5412837563/il_1588xN.5412837563_e6kb.jpg"
+                      class="card-img-top"
+                      alt="Think and Grow Rich"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Think and Grow Rich</h5>
+                      <p class="text-warning">★★★★★</p>
+                      <p class="fw-bold">$55.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-md-2">
+                  <div class="card border-0 shadow-sm">
+                    <img
+                      src="https://i.etsystatic.com/47071481/r/il/65a036/5412837563/il_1588xN.5412837563_e6kb.jpg"
+                      class="card-img-top"
+                      alt="Think and Grow Rich"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Think and Grow Rich</h5>
+                      <p class="text-warning">★★★★★</p>
+                      <p class="fw-bold">$55.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="col-md-2">
+                  <div class="card border-0 shadow-sm">
+                    <img
+                      src="https://i.etsystatic.com/47071481/r/il/65a036/5412837563/il_1588xN.5412837563_e6kb.jpg"
+                      class="card-img-top"
+                      alt="Think and Grow Rich"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Think and Grow Rich</h5>
+                      <p class="text-warning">★★★★★</p>
+                      <p class="fw-bold">$55.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="col-md-2">
+                  <div class="card border-0 shadow-sm">
+                    <img
+                      src="https://i.etsystatic.com/47071481/r/il/65a036/5412837563/il_1588xN.5412837563_e6kb.jpg"
+                      class="card-img-top"
+                      alt="Think and Grow Rich"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Think and Grow Rich</h5>
+                      <p class="text-warning">★★★★★</p>
+                      <p class="fw-bold">$55.00</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Product 1 -->
+                <div class="col-md-2">
+                  <div class="card border-0 shadow-sm">
+                    <img
+                      src="https://i.etsystatic.com/35237982/r/il/dd784d/5760610515/il_1588xN.5760610515_i4yl.jpg"
+                      class="card-img-top"
+                      alt="How to win friends"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">How to win friends</h5>
+                      <p class="text-warning">★★★★☆</p>
+                      <p class="fw-bold">$65.00 – $85.00</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-md-2">
+                  <div class="card border-0 shadow-sm position-relative">
+                    <img
+                      src="https://i.etsystatic.com/57332842/r/il/016d8f/6705084185/il_1588xN.6705084185_p3w2.jpg"
+                      class="card-img-top"
+                      alt="Deep Work"
+                    />
+                    <div
+                      class="position-absolute top-0 end-0 m-2 badge bg-danger"
+                    >
+                      -38%
+                    </div>
+                    <div class="Deep Work">
+                      <h5 class="card-title">Deep Work</h5>
+                      <p class="text-warning">★★★★☆</p>
+                      <p>
+                        <del class="text-muted">$80.00</del>
+                        <span class="fw-bold">$50.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-md-2">
+                  <div class="card border-0 shadow-sm">
+                    <img
+                      src="https://i.etsystatic.com/47071481/r/il/65a036/5412837563/il_1588xN.5412837563_e6kb.jpg"
+                      class="card-img-top"
+                      alt="Think and Grow Rich"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Think and Grow Rich</h5>
+                      <p class="text-warning">★★★★★</p>
+                      <p class="fw-bold">$55.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-md-2">
+                  <div class="card border-0 shadow-sm">
+                    <img
+                      src="https://i.etsystatic.com/47071481/r/il/65a036/5412837563/il_1588xN.5412837563_e6kb.jpg"
+                      class="card-img-top"
+                      alt="Think and Grow Rich"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Think and Grow Rich</h5>
+                      <p class="text-warning">★★★★★</p>
+                      <p class="fw-bold">$55.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="col-md-2">
+                  <div class="card border-0 shadow-sm">
+                    <img
+                      src="https://i.etsystatic.com/47071481/r/il/65a036/5412837563/il_1588xN.5412837563_e6kb.jpg"
+                      class="card-img-top"
+                      alt="Think and Grow Rich"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Think and Grow Rich</h5>
+                      <p class="text-warning">★★★★★</p>
+                      <p class="fw-bold">$55.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="col-md-2">
+                  <div class="card border-0 shadow-sm">
+                    <img
+                      src="https://i.etsystatic.com/47071481/r/il/65a036/5412837563/il_1588xN.5412837563_e6kb.jpg"
+                      class="card-img-top"
+                      alt="Think and Grow Rich"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Think and Grow Rich</h5>
+                      <p class="text-warning">★★★★★</p>
+                      <p class="fw-bold">$55.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Main Content Ends -->
+      </div>
+    </div>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="fontawesome-free-6.7.2-web/js/all.min.js"></script>
+  </body>
+</html>

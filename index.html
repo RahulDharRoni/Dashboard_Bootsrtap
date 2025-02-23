@@ -9,118 +9,119 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="container-fluid py-2 shadow-sm">
-        <div class="row align-items-center">
-          <!-- Hamburger Icon -->
-          <div class="col-md-1 text-center fs-2">
-            <i class="fa-solid fa-bars fa-lg"></i>
-          </div>
-
-          <!-- Search Bar -->
-          <div class="col-md-5">
-            <form class="d-flex">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Start typing to search..."
-              />
-              <button type="submit" class="btn btn-primary ms-2">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </form>
-          </div>
-
-          <!-- Right Section -->
-          <div class="col-md-6 d-flex justify-content-end align-items-center">
-            <!-- Dropdown -->
-            <div class="dropdown me-3">
-              <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
-              >
-                Menu
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Icons -->
-            <div class="me-3">
-              <i class="fa-solid fa-message me-2"></i>
-              <i class="fa-solid fa-bell"></i>
-            </div>
-
-            <!-- User Profile -->
-            <div class="dropdown">
-              <button
-                class="btn btn-secondary dropdown-toggle d-flex align-items-center"
-                type="button"
-                data-bs-toggle="dropdown"
-              >
-                <i class="fa-solid fa-user me-2"></i> Profile
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Dashboard</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Logout</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
     <!-- main start -->
     <main>
       <div class="container-fluid">
-        <div class="row bg-secondary-subtle">
+        <div class="row">
           <!-- Sidebar Menu -->
-          <!-- Sidebar -->
+
           <div
-            class="d-flex flex-column align-items-center bg-light shadow-lg side-menu fs-4 gap-2 pt-5 position-fixed h-100 overflow-hidden"
-            style="width: 60px; transition: width 0.3s ease-in-out"
-            onmouseover="this.style.width='180px'"
-            onmouseout="this.style.width='70px'"
+            class="col-md-2 vh-100 bg-primary text-white position-fixed d-flex flex-column pt-4 px-3"
           >
-            <div class="d-flex align-items-center gap-2 w-100 px-3">
-              <i class="fa-solid fa-house"></i>
-              <span class="ms-2 text-nowrap d-none d-md-inline">Home</span>
+            <!-- User Profile -->
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="col-md-4">
+                <i
+                  class="fa-solid fa-user me-2 fs-1 bg-secondary-subtle rounded-circle p-2"
+                ></i>
+              </div>
+              <div class="dropdown col-md-8 d-flex justify-content-end">
+                <button
+                  class="btn btn-secondary dropdown-toggle d-flex align-items-center"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Profile
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
             </div>
 
-            <div class="d-flex align-items-center gap-2 w-100 px-3">
-              <i class="fa-solid fa-message"></i>
-              <span class="ms-2 text-nowrap d-none d-md-inline">Messages</span>
+            <!-- Menu -->
+            <div>
+              <a
+                href="#"
+                class="d-flex align-items-center gap-2 text-white text-decoration-none py-2"
+              >
+                <i class="fa-solid fa-house"></i>
+                <span class="ms-2 text-nowrap d-none d-md-inline">Home</span>
+              </a>
+
+              <a
+                href="#"
+                class="d-flex align-items-center gap-2 text-white text-decoration-none py-2"
+              >
+                <i class="fa-solid fa-message"></i>
+                <span class="ms-2 text-nowrap d-none d-md-inline"
+                  >Messages</span
+                >
+              </a>
+
+              <a
+                href="#"
+                class="d-flex align-items-center gap-2 text-white text-decoration-none py-2"
+              >
+                <i class="fa-solid fa-users"></i>
+                <span class="ms-2 text-nowrap d-none d-md-inline">Users</span>
+              </a>
+
+              <a
+                href="shop.html"
+                class="d-flex align-items-center gap-2 text-white text-decoration-none py-2"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="ms-2 text-nowrap d-none d-md-inline">Cart</span>
+              </a>
+
+              <a
+                href="#"
+                class="d-flex align-items-center gap-2 text-white text-decoration-none py-2"
+              >
+                <i class="fa-solid fa-pen-to-square"></i>
+                <span class="ms-2 text-nowrap d-none d-md-inline">Edit</span>
+              </a>
             </div>
 
-            <div class="d-flex align-items-center gap-2 w-100 px-3">
-              <i class="fa-solid fa-users"></i>
-              <span class="ms-2 text-nowrap d-none d-md-inline">Users</span>
-            </div>
-
-            <div class="d-flex align-items-center gap-2 w-100 px-3">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <span class="ms-2 text-nowrap d-none d-md-inline">Cart</span>
-            </div>
-
-            <div class="d-flex align-items-center gap-2 w-100 px-3">
-              <i class="fa-solid fa-pen-to-square"></i>
-              <span class="ms-2 text-nowrap d-none d-md-inline">Edit</span>
+            <!-- Language, Message & Notifications -->
+            <div
+              class="mt-auto d-flex justify-content-between align-items-center my-2"
+            >
+              <div class="dropdown me-3">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Menu
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Icons -->
+              <div class="me-3">
+                <i class="fa-solid fa-message me-2"></i>
+                <i class="fa-solid fa-bell"></i>
+              </div>
             </div>
           </div>
 
           <!-- Main Content (Added Offset to Avoid Overlap) -->
-          <div class="col-md-11 offset-md-1 pt-4 h-100">
+          <div
+            class="col-md-10 offset-md-2 pt-4 h-100 d-flex justify-content-end align-content-center bg-secondary-subtle"
+          >
             <div class="row">
               <!-- Left Section (Big Image & Article) -->
               <div class="col-md-5">
-                <div class="card overflow-hidden">
+                <div class="card">
                   <img
                     src="https://images.unsplash.com/photo-1739961097716-064cb40a941e?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     class="card-img-top"
