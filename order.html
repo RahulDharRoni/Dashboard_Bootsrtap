@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed Header</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- main start -->
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Sidebar Menu -->
+
+          <div
+            class="col-md-2 vh-100 bg-primary text-white position-fixed d-flex flex-column pt-4 px-3"
+          >
+            <!-- User Profile -->
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="col-md-4">
+                <i class="fa-solid fa-user fs-2 bg-dark rounded-circle p-2"></i>
+              </div>
+              <div class="dropdown col-md-8 d-flex justify-content-end">
+                <button
+                  class="btn btn-secondary dropdown-toggle d-flex align-items-center"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Name
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Menu -->
+            <div class="mt-2">
+              <a
+                href="index.html"
+                class="d-flex align-items-center gap-2 text-white text-decoration-none py-2"
+              >
+                <i class="fa-solid fa-house"></i>
+                <span class="ms-2 text-nowrap d-none d-md-inline">Home</span>
+              </a>
+              <hr class="my-1" />
+              <a
+                href="order.html"
+                class="d-flex align-items-center gap-2 text-white text-decoration-none py-2 my-1"
+              >
+                <i class="fa-solid fa-message"></i>
+                <span class="ms-2 text-nowrap d-none d-md-inline">Order</span>
+              </a>
+              <hr class="my-1" />
+
+              <a
+                href="#"
+                class="d-flex align-items-center gap-2 text-white text-decoration-none py-2"
+              >
+                <i class="fa-solid fa-users"></i>
+                <span class="ms-2 text-nowrap d-none d-md-inline">Users</span>
+              </a>
+              <hr class="my-1" />
+              <a
+                href="shop.html"
+                class="d-flex align-items-center gap-2 text-white text-decoration-none py-2"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="ms-2 text-nowrap d-none d-md-inline">Shop</span>
+              </a>
+              <hr class="my-1" />
+              <a
+                href="#"
+                class="d-flex align-items-center gap-2 text-white text-decoration-none py-2"
+              >
+                <i class="fa-solid fa-pen-to-square"></i>
+                <span class="ms-2 text-nowrap d-none d-md-inline"
+                  >Add Post</span
+                >
+              </a>
+              <hr class="my-1" />
+              <a
+                href="contact.html"
+                class="d-flex align-items-center gap-2 text-white text-decoration-none py-2"
+              >
+                <i class="fa-solid fa-pen-to-square"></i>
+                <span class="ms-2 text-nowrap d-none d-md-inline"
+                  >Contact Us</span
+                >
+              </a>
+            </div>
+
+            <!-- Language, Message & Notifications -->
+            <div
+              class="mt-auto d-flex justify-content-between align-items-center my-2"
+            >
+              <div class="dropdown me-3">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Menu
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Icons -->
+              <div class="me-3">
+                <i class="fa-solid fa-message me-2"></i>
+                <i class="fa-solid fa-bell"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Content (Added Offset to Avoid Overlap) -->
+          <div
+            class="col-md-10 offset-md-2 pt-4 h-full d-flex justify-content-end align-content-center bg-secondary-subtle vh-100"
+          >
+            <div class="container mt-4">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <h2>Orders</h2>
+                <button class="btn btn-primary">Create order</button>
+              </div>
+
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="card p-3">
+                    <h5>Total Orders</h5>
+                    <p>21</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card p-3">
+                    <h5>Order items over time</h5>
+                    <p>15</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card p-3">
+                    <h5>Returns Orders</h5>
+                    <p>0</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card p-3">
+                    <h5>Fulfilled orders over time</h5>
+                    <p>12</p>
+                  </div>
+                </div>
+              </div>
+
+              <table class="table mt-4">
+                <thead>
+                  <tr>
+                    <th>Order</th>
+                    <th>Date</th>
+                    <th>Customer</th>
+                    <th>Payment</th>
+                    <th>Total</th>
+                    <th>Delivery</th>
+                    <th>Items</th>
+                    <th>Fulfillment</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>#1002</td>
+                    <td>11 Feb, 2024</td>
+                    <td>Wade Warren</td>
+                    <td><span class="badge bg-warning">Pending</span></td>
+                    <td>$20.00</td>
+                    <td>N/A</td>
+                    <td>2 items</td>
+                    <td><span class="badge bg-danger">Unfulfilled</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>#1004</td>
+                    <td>13 Feb, 2024</td>
+                    <td>Esther Howard</td>
+                    <td><span class="badge bg-success">Success</span></td>
+                    <td>$22.00</td>
+                    <td>N/A</td>
+                    <td>3 items</td>
+                    <td><span class="badge bg-success">Fulfilled</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>#1007</td>
+                    <td>15 Feb, 2024</td>
+                    <td>Jenny Wilson</td>
+                    <td><span class="badge bg-warning">Pending</span></td>
+                    <td>$25.00</td>
+                    <td>N/A</td>
+                    <td>1 item</td>
+                    <td><span class="badge bg-danger">Unfulfilled</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>#1009</td>
+                    <td>17 Feb, 2024</td>
+                    <td>Guy Hawkins</td>
+                    <td><span class="badge bg-success">Success</span></td>
+                    <td>$27.00</td>
+                    <td>N/A</td>
+                    <td>5 items</td>
+                    <td><span class="badge bg-success">Fulfilled</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Main Content Ends -->
+        </div>
+      </div>
+    </main>
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="fontawesome-free-6.7.2-web/js/all.min.js"></script>
+  </body>
+</html>
